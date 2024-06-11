@@ -1,7 +1,7 @@
 # NewsPulse
 This is News Read Application repository! This project is a comprehensive news reading app designed to keep you updated with the latest headlines and provide powerful features for managing and personalizing your news consumption.
 
-#Features
+# Features
 
 Top Headlines
 Home Page: The home page displays the top headlines from various news sources, ensuring you stay informed about the most important and trending news.
