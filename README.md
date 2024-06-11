@@ -1,18 +1,16 @@
 # NewsPulse
-Welcome to the News Read Application repository! This project is a comprehensive news reading app designed to keep you updated with the latest headlines and provide powerful features for managing and personalizing your news consumption.
+This is News Read Application repository! This project is a comprehensive news reading app designed to keep you updated with the latest headlines and provide powerful features for managing and personalizing your news consumption.
 
-# Features
+#Features
 
-# Top Headlines
-# Home Page:
-The home page displays the top headlines from various news sources, ensuring you stay informed about the most important and trending news.
+Top Headlines
+Home Page: The home page displays the top headlines from various news sources, ensuring you stay informed about the most important and trending news.
+
 Search and Filter News
-
-# Search:
-Easily search for news articles using keywords.
+Search: Easily search for news articles using keywords.
 Filter by Date: Refine your search results by specifying a date range. This allows you to find news articles from a particular time period, enhancing your ability to locate relevant information.
 
-# Save for Later
+Save for Later
 Bookmarking: Save articles that you find interesting or want to read later. This feature allows you to build a personal library of news that you can access at any time.
 
 # Technologies Used
