@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingVC" customModule="News_Pulse" customModuleProvider="target">
+            <connections>
+                <outlet property="getStartButton" destination="sD0-zx-gvl" id="n9l-ks-uqe"/>
+                <outlet property="pageControl" destination="mqa-OR-Ok6" id="kyi-ab-4oM"/>
+                <outlet property="scrollView" destination="yxA-zd-TMA" id="Lxj-b3-uSm"/>
+                <outlet property="skipButton" destination="gfp-BU-lOk" id="aBC-sc-SBP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="es1-mz-4K4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoSmall" translatesAutoresizingMaskIntoConstraints="NO" id="bhu-0K-okE">
+                    <rect key="frame" x="149" y="79" width="95" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="39s-be-dTq"/>
+                        <constraint firstAttribute="height" constant="35" id="Yho-7j-jmC"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxA-zd-TMA">
+                    <rect key="frame" x="10" y="134" width="373" height="573"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfp-BU-lOk">
+                    <rect key="frame" x="166.66666666666666" y="773" width="60" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="SKIP">
+                        <color key="baseForegroundColor" red="0.16862745098039217" green="0.1764705882352941" blue="0.25882352941176467" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="skipButtonTapped:" destination="-1" eventType="touchUpInside" id="VeL-yI-H0T"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mqa-OR-Ok6">
+                    <rect key="frame" x="138.66666666666666" y="727" width="116" height="26"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <connections>
+                        <action selector="pageControlValueChanged:" destination="-1" eventType="valueChanged" id="u8V-Zf-wdP"/>
+                    </connections>
+                </pageControl>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD0-zx-gvl">
+                    <rect key="frame" x="30" y="758" width="333" height="50"/>
+                    <color key="backgroundColor" name="PRIMARY_COLOR"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="uHJ-fy-LmV"/>
+                    </constraints>
+                    <color key="tintColor" name="PRIMARY_COLOR"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <attributedString key="attributedTitle">
+                            <fragment content="GET STARTED">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="16" name="SFMono-Semibold"/>
+                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="getStartButtonTapped:" destination="-1" eventType="touchUpInside" id="sG7-oy-ALN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sD0-zx-gvl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7Jb-p1-Loy"/>
+                <constraint firstItem="mqa-OR-Ok6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Ie-gB-lkj"/>
+                <constraint firstItem="sD0-zx-gvl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KjF-YR-onn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sD0-zx-gvl" secondAttribute="bottom" constant="10" id="NOW-FJ-P24"/>
+                <constraint firstItem="yxA-zd-TMA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="SCe-6W-jXL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sD0-zx-gvl" secondAttribute="trailing" constant="30" id="UJf-Ep-y5j"/>
+                <constraint firstItem="yxA-zd-TMA" firstAttribute="top" secondItem="bhu-0K-okE" secondAttribute="bottom" constant="20" id="WFD-oR-5tj"/>
+                <constraint firstItem="sD0-zx-gvl" firstAttribute="top" secondItem="mqa-OR-Ok6" secondAttribute="bottom" constant="5" id="WFH-sh-CzF"/>
+                <constraint firstItem="bhu-0K-okE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="WwS-Lt-Hjf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gfp-BU-lOk" secondAttribute="bottom" constant="10" id="ZQu-yp-7Xu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yxA-zd-TMA" secondAttribute="trailing" constant="10" id="jq7-cX-eoT"/>
+                <constraint firstItem="gfp-BU-lOk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kXB-cY-zN3"/>
+                <constraint firstItem="mqa-OR-Ok6" firstAttribute="top" secondItem="yxA-zd-TMA" secondAttribute="bottom" constant="20" id="lI8-zl-eOA"/>
+                <constraint firstItem="bhu-0K-okE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oCn-ke-qBF"/>
+            </constraints>
+            <point key="canvasLocation" x="116.79389312977099" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoSmall" width="90" height="35"/>
+        <namedColor name="PRIMARY_COLOR">
+            <color red="0.22699999809265137" green="0.52499997615814209" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

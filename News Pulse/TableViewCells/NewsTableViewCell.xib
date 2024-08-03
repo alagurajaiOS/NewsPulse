@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="194" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="News_Pulse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUNE 27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfW-DF-J0h" userLabel="dateLabel">
+                        <rect key="frame" x="10" y="15" width="49" height="13.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="BLACK_60"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0r8-Yz-mXi" userLabel="imageView">
+                        <rect key="frame" x="315" y="21.666666666666671" width="120" height="85"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="85" id="GKT-QE-1Uu"/>
+                            <constraint firstAttribute="width" constant="120" id="oGZ-Cn-jaI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cU-ed-057" userLabel="titleLabel">
+                        <rect key="frame" x="10" y="38.333333333333336" width="295" height="64.666666666666657"/>
+                        <string key="text">Three ways mental health support can diversify tech. Three ways mental health support can diversify tech. Three ways mental health support can diversify tech.</string>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" name="DARK_BLUE"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzx-Vp-qWx" userLabel="sourceView" customClass="RoundView" customModule="News_Pulse" customModuleProvider="target">
+                        <rect key="frame" x="10.000000000000004" y="141.66666666666666" width="52.333333333333343" height="32.333333333333343"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TECH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT8-S2-6SF" userLabel="sourceLabel">
+                                <rect key="frame" x="10" y="4.9999999999999982" width="32.333333333333336" height="22.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="DARK_BLUE"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="LIGHT_BACKGROUND_GRAY"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gT8-S2-6SF" secondAttribute="trailing" constant="10" id="Qz2-qc-zGh"/>
+                            <constraint firstAttribute="bottom" secondItem="gT8-S2-6SF" secondAttribute="bottom" constant="5" id="bCl-9C-pP6"/>
+                            <constraint firstItem="gT8-S2-6SF" firstAttribute="leading" secondItem="dzx-Vp-qWx" secondAttribute="leading" constant="10" id="iIG-Hh-stj"/>
+                            <constraint firstItem="gT8-S2-6SF" firstAttribute="top" secondItem="dzx-Vp-qWx" secondAttribute="top" constant="5" id="jcf-I5-2DC"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfK-VH-uro" userLabel="saveButton">
+                        <rect key="frame" x="234" y="143" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Q6I-hh-BUM"/>
+                            <constraint firstAttribute="height" constant="30" id="yFr-8E-zUI"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="save"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQD-nT-2s7" userLabel="menuButton">
+                        <rect key="frame" x="277" y="143" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="IKv-kA-jxf"/>
+                            <constraint firstAttribute="width" constant="30" id="SAF-C5-6Ni"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="news_cell_menu"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZfK-VH-uro" firstAttribute="centerY" secondItem="dzx-Vp-qWx" secondAttribute="centerY" id="07l-Lt-mnb"/>
+                    <constraint firstItem="0r8-Yz-mXi" firstAttribute="top" secondItem="vfW-DF-J0h" secondAttribute="centerY" id="2MH-Fn-vtJ"/>
+                    <constraint firstItem="wQD-nT-2s7" firstAttribute="leading" secondItem="ZfK-VH-uro" secondAttribute="trailing" constant="13" id="8a7-ur-28k"/>
+                    <constraint firstItem="wQD-nT-2s7" firstAttribute="centerY" secondItem="dzx-Vp-qWx" secondAttribute="centerY" id="DJY-KH-Eg8"/>
+                    <constraint firstItem="vfW-DF-J0h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Uem-Ze-kdh"/>
+                    <constraint firstItem="8cU-ed-057" firstAttribute="leading" secondItem="vfW-DF-J0h" secondAttribute="leading" id="VAi-D2-vT4"/>
+                    <constraint firstItem="dzx-Vp-qWx" firstAttribute="top" secondItem="0r8-Yz-mXi" secondAttribute="bottom" constant="35" id="cb9-fH-3LI"/>
+                    <constraint firstItem="8cU-ed-057" firstAttribute="top" secondItem="vfW-DF-J0h" secondAttribute="bottom" constant="10" id="eXW-8L-yoE"/>
+                    <constraint firstAttribute="trailing" secondItem="0r8-Yz-mXi" secondAttribute="trailing" constant="15" id="eqR-qC-711"/>
+                    <constraint firstItem="wQD-nT-2s7" firstAttribute="trailing" secondItem="0r8-Yz-mXi" secondAttribute="leading" constant="-8" id="i1G-m9-11b"/>
+                    <constraint firstItem="0r8-Yz-mXi" firstAttribute="leading" secondItem="8cU-ed-057" secondAttribute="trailing" constant="10" id="ikZ-dV-uAA"/>
+                    <constraint firstItem="vfW-DF-J0h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="iwx-j8-ZHZ"/>
+                    <constraint firstAttribute="bottom" secondItem="dzx-Vp-qWx" secondAttribute="bottom" constant="20" id="pim-xt-5vg"/>
+                    <constraint firstItem="dzx-Vp-qWx" firstAttribute="leading" secondItem="8cU-ed-057" secondAttribute="leading" id="sQ6-9Q-Khl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="vfW-DF-J0h" id="Lku-nr-tdg"/>
+                <outlet property="menuButton" destination="wQD-nT-2s7" id="ZJg-hD-08e"/>
+                <outlet property="newsImageView" destination="0r8-Yz-mXi" id="kPJ-IR-6KW"/>
+                <outlet property="saveButton" destination="ZfK-VH-uro" id="pGP-BV-oag"/>
+                <outlet property="sourceLabel" destination="gT8-S2-6SF" id="RzB-4w-50e"/>
+                <outlet property="sourceView" destination="dzx-Vp-qWx" id="ptK-ci-5dc"/>
+                <outlet property="titleLabel" destination="8cU-ed-057" id="Vs5-NF-wRE"/>
+            </connections>
+            <point key="canvasLocation" x="215.26717557251908" y="70.422535211267615"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="news_cell_menu" width="20" height="20"/>
+        <image name="save" width="20" height="20.333333969116211"/>
+        <namedColor name="BLACK_60">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DARK_BLUE">
+            <color red="0.16862745098039217" green="0.17647058823529413" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LIGHT_BACKGROUND_GRAY">
+            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

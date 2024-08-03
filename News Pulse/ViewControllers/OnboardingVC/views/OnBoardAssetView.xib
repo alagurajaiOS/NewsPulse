@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardAssetView" customModule="News_Pulse"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1AS-qT-50a">
+                    <rect key="frame" x="30" y="229.66666666666663" width="333" height="393"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Early Access to Forbes Magazines." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNk-UI-CvG">
+                    <rect key="frame" x="0.0" y="698" width="393" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="wku-Do-dID"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1AS-qT-50a" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7Ma-kx-Zro"/>
+                <constraint firstItem="1AS-qT-50a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="IiT-LF-MyV"/>
+                <constraint firstItem="1AS-qT-50a" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QcC-aO-qZW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vNk-UI-CvG" secondAttribute="trailing" id="Rrd-nU-3Gz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1AS-qT-50a" secondAttribute="trailing" constant="30" id="V0o-SD-55p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vNk-UI-CvG" secondAttribute="bottom" constant="20" id="bVm-gn-RLs"/>
+                <constraint firstItem="vNk-UI-CvG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hnf-xy-9Vm"/>
+                <constraint firstItem="1AS-qT-50a" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" id="tHq-FT-XFu"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="1AS-qT-50a" id="wYu-n2-uK8"/>
+                <outlet property="label" destination="vNk-UI-CvG" id="Ykj-gd-gSt"/>
+            </connections>
+            <point key="canvasLocation" x="351.90839694656489" y="-18.661971830985916"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
